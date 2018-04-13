@@ -90,7 +90,7 @@ function gameOver()
 
 function startNewGame()
 {
-  // remove resetButton node from tag tree
+  // remove resetButton node from DOM tree
   resetButton.parentNode.removeChild(resetButton);
 
   // initialize parameters to start new game
