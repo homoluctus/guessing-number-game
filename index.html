@@ -11,11 +11,15 @@
     <main role="main">
       <div id="container" class="container" style="margin-top:30px;">
         <div class="resultMessage alert"></div>
-        <input type="text" id="guessField" class="guessField form-control" placeholder="Please enter a positive integer" autofocus />
+        <div class="input-group mb-3">
+          <input type="text" id="guessField" class="guessField form-control" placeholder="Please enter a positive integer" aria-describedby="basic-addon2" autofocus />
+          <div class="input-group-append">
+            <input type="submit" class="guessSubmit btn btn-primary" value="SUBMIT" />
+          </div>
+        </div>
         <small id="guessField" class="form-text text-muted">
           <ul><li>Challenge is up to 10 times</li></ul>
         </small>
-        <input type="submit" class="guessSubmit btn btn-primary" value="SUBMIT" /><br />
         <div style="margin-top:20px;">
           <p id="guesses" class="guesses font-weight-bold"></p>
         </div>
