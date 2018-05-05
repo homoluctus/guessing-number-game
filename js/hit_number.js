@@ -55,10 +55,10 @@ function getBackgroundColor(result)
   // Change the background color by result
   var color;
   switch (result) {
-    case -2 : color = "#ffeeba"; break;
-    case -1 : color = "#f5c6cb";    break;
+    case -2 : color = "#ffeeba";  break;
+    case -1 : color = "#f5c6cb";  break;
     case 0  : color = "#c3e6cb";  break;
-    case 1  : color = "#f5c6cb";    break;
+    case 1  : color = "#f5c6cb";  break;
   }
   return color;
 }
