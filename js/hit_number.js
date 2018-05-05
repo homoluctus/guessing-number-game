@@ -98,7 +98,7 @@ function startNewGame()
   guessSubmit.disabled = false;
   guesses.textContent = '';
   resultMessage.textContent = '';
-  resultMessage.style.backgroundColor = 'white';
+  resultMessage.style.backgroundColor = '#eeeeee';
   guessField.value = '';
   guessField.focus();
   answer = randomNumber();
