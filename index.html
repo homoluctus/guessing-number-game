@@ -9,6 +9,13 @@
     <header>
       <div class="container">
         <h1 class="title">GUESSING NUMBER GAME</h1>
+        <p id="time"></p>
+        <script type="text/text/javascript">
+          setInterval(function(){
+            var p = document.getElementById('time');
+            p.textContent = new Date();
+          }, 1000);
+        </script>
       </div>
     </header>
     <main role="main">
