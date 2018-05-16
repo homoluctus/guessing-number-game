@@ -2,17 +2,24 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Guessing number game</title>
   </head>
   <body>
     <header>
       <div class="container">
         <h1 class="title">GUESSING NUMBER GAME</h1>
-        <p id="time"></p>
+        <p class="time-field">
+          <i class="material-icons">
+            access_time
+          </i>&nbsp;
+          <span id="time" style="font-size:22px;"></span>
+        </p>
         <script type="text/javascript">
           setInterval(function(){
-            var p = document.getElementById('time');
-            p.textContent = new Date();
+            var span = document.getElementById('time');
+            var options = { hour12: 'true', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+            span.textContent = new Date().toLocaleDateString('ja-JP', options);
           }, 1000);
         </script>
       </div>

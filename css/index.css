@@ -11,6 +11,10 @@ header .title {
 
 .container {
   margin-top: 30px;
+}
+
+.time-field {
+  height: 24px;
   text-align: center;
 }
 
